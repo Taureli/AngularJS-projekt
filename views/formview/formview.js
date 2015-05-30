@@ -12,7 +12,6 @@ angular.module('projekt.formview', ['ngRoute', 'searchtest'])
       this.subreddit = "ProgrammerHumor";
       this.results = {};
       var pThis = this;
-      console.log($scope);
       this.getFromReddit = function getFromReddit() {
         searchGetter.getArticles(this.subreddit, function(v) {
           var i = 0;
@@ -21,6 +20,7 @@ angular.module('projekt.formview', ['ngRoute', 'searchtest'])
             pThis.results[i].contentT = $sce.trustAsHtml(pThis.results[i].data.title);
             pThis.results[i].url = $sce.trustAsHtml(pThis.results[i].data.permalink);
             pThis.results[i].thumbnail = $sce.trustAsHtml(pThis.results[i].data.thumbnail);
+            pThis.results[i].subreddit = $sce.trustAsHtml(pThis.subreddit);
             pThis.results[i].id = $sce.trustAsHtml(pThis.results[i].data.id);
             i++;
           })

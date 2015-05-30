@@ -9,7 +9,7 @@
         <p>
           <img src="{{c.thumbnail}}" alt=""></img>
           <a href="http://reddit.com{{c.url}}" ng-bind-html="c.contentT"></a>
-          <a href="#/commentsview/{{c.id}}">Comments</a>
+          <a href="#/commentsview/{{c.subreddit}}/{{c.id}}">Comments</a>
         </p>
       </span>
     </div>

@@ -7,7 +7,6 @@ angular.module('searchtest', [])
         return $http.get(url).success(function(data) {
           r = data;
           doneFunction(r);
-          console.log(r);
         }).error(function(data, status, headers, config) {
           r={};
           console.log(config);
