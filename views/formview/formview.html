@@ -1,11 +1,11 @@
-<div ng-app="formapp">
-    <h2>Test header</h2>
+<div ng-app="formview" ng-controller="FormviewCtrl as formview">
+    <h2>Subreddit browser</h2>
     <div>
-      <input type="text" ng-model="projekt.question" required>
-      <button ng-click="projekt.getAnswer()">Send</button>
+      <input type="text" ng-model="formview.subreddit" required>
+      <button ng-click="formview.getFromReddit()">Send</button>
     </div>
     <div>
-      <span ng-repeat="c in projekt.results">
+      <span ng-repeat="c in formview.results">
         <p>
           <span ng-bind-html="c.contentT"></span>
         </p>
