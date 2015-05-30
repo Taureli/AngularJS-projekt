@@ -1,0 +1,10 @@
+<div ng-app="commentsview" ng-controller="CommentsviewCtrl as commentsview">
+    <h2>Comments in thread</h2>
+    <div>
+      <span ng-repeat="c in commentsview.results">
+        <p>
+          <span ng-bind-html="c.contentT"></span>
+        </p>
+      </span>
+    </div>
+</div>

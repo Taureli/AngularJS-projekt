@@ -1,7 +1,9 @@
 angular.module('projekt', [
   'ngRoute',
   'projekt.formview',
-  'searchtest'
+  'projekt.commentsview',
+  'searchtest',
+  'comments'
 ]).
 
 config(['$routeProvider', function($routeProvider){
