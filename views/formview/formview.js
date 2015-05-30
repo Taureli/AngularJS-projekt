@@ -19,6 +19,8 @@ angular.module('projekt.formview', ['ngRoute', 'searchtest'])
           pThis.results = v.data.children;
           pThis.results.forEach(function(entry){
             pThis.results[i].contentT = $sce.trustAsHtml(pThis.results[i].data.title);
+            pThis.results[i].url = $sce.trustAsHtml(pThis.results[i].data.permalink);
+            pThis.results[i].thumbnail = $sce.trustAsHtml(pThis.results[i].data.thumbnail);
             i++;
           })
         });
