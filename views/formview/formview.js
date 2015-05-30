@@ -26,4 +26,5 @@ angular.module('projekt.formview', ['ngRoute', 'searchtest'])
           })
         });
       };
+      this.getFromReddit();
 }]);
