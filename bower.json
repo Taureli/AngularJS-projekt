@@ -1,0 +1,11 @@
+{
+  "name": "AngularJS-projekt",
+  "description": "",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-route": "1.4.x",
+    "angular-loader": "1.4.x"
+  }
+}

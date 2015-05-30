@@ -1,0 +1,13 @@
+{
+  "name": "AngularJS-projekt",
+  "description": "",
+  "version": "0.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "*",
+    "http-server": "*"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}
