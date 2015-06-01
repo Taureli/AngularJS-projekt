@@ -11,7 +11,6 @@ angular.module('projekt.commentsview', ['ngRoute', 'comments'])
     function($scope, $routeParams, $timeout, $sce, commentGetter) {
       this.results = {};
       var pThis = this;
-      //$scope.threadId = $routeParams.threadId;
       this.getAllComments = function getAllComments() {
         commentGetter.getComments($routeParams.subreddit, $routeParams.threadId, function(v) {
           var i = 0;
